@@ -1,0 +1,312 @@
+<html>
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+
+    <link rel="stylesheet" href="./main.css">
+
+</head>
+
+
+<body>
+<div class="wrapper">
+
+    <div class="header-wrap">
+    </div>
+
+   <div class="container">
+
+        <div class="menu-list">
+
+            <div class="inside-menu">
+
+                <div class="compose-wrap" onclick="onComposeClick()">
+
+                    <div class="plus-btn" onclick="onSearchClick()">
+                    </div>
+
+                    <div class="compose">Compose
+                    </div>
+
+                </div>
+
+                <div class="main-box-wrap">
+
+                    <div class="main-box">
+
+                        <div class="inbox">
+                        </div>
+
+                        <div class="info">inbox
+                        </div>
+
+                        <div class="num">4,628
+                        </div>
+
+                    </div>
+                 
+                    <div class="main-box">
+
+                        <div class="snoozed">
+                        </div>
+
+                        <div class="info">snoozed
+                        </div>
+
+                        <div class="num">
+                        </div>
+
+                    </div>
+
+                    <div class="main-box">
+
+                        <div class="important">
+                        </div>
+
+                        <div class="info">important
+                        </div>
+
+                        <div class="num">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="meet-wrap">
+
+                    <div class="title">Meet
+                    </div>
+
+                    <div class="meeting-row">
+
+                        <div class="inbox camera">
+                        </div>
+
+                        <div class="info">new meeting
+                        </div>
+
+                    </div>
+
+                    <div class="meeting-row top">
+
+                        <div class="inbox computer">
+                        </div>
+
+                        <div class="info">join a meeting
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="Hangouts-wrap meet-wrap">
+
+                    <div class="title">Hangouts
+                    </div>
+
+                    <div class="account-wrap">
+        
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a-/AOh14Gib4GeefjJ9oFOIZ6e1pI2ioWjlMXI8IPU0cVaooSs=s28-c-k-no">
+
+                        <div class="account">
+
+                            <div class="name">Shaul
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="members">
+
+                    <div class="members-row members-row1">
+
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a-/AOh14GhkVTDbI-O3HRNjl0zoSg0oi01ceu464ZSYZTTcJw=s28-c-k-no">
+
+                        <div class="name name1">FuZe
+                        </div>    
+
+                    </div>
+
+                    <div class="members-row">
+
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a/AATXAJwbrJ8_E_0GenOrNPYRu4W2JuD4om6w8Yss8CV6=s28-c-k-no-mo">
+
+                        <div class="name">	
+                            Hadas Loostiger
+                        </div>    
+
+                    </div>
+
+                    <div class="members-row">
+
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a-/AOh14GhGTxnumxCGqSILgfayjyomNs-g7xPqVQXOSvnFtCk=s28-c-k-no">
+
+                        <div class="name">Noam Yagil
+                        </div>    
+
+                    </div>
+
+                    <div class="members-row">
+
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a-/AOh14Gh4FLf2KkkjK201RaK0ZulW1xD7HRXmuCVTTdrIDg=s28-c-k-no">
+
+                        <div class="name">Ocean
+                        </div>    
+
+                    </div>
+
+                    <div class="members-row">
+
+                        <img class="browser-img" src="https://lh3.googleusercontent.com/a/AATXAJzVnRZTV_vrLGjYyxD7OLRQBgzWDxLHzLkh4Tk=s28-c-k-no-mo">
+
+                        <div class="name">	
+                            Vena Choquette
+                        </div>    
+
+                    </div>
+
+                
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="list">
+        </div>
+
+        <div class="modal-panle hide">
+
+            <div class="title-wrap">
+
+                <div class="msg-title">New Message
+                </div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-maximize-2"><polyline points="15 3 21 3 21 9"/>
+                    <polyline points="9 21 3 21 3 15"/>
+                    <line x1="21" y1="3" x2="14" y2="10"/>
+                    <line x1="3" y1="21" x2="10" y2="14"/>
+                </svg>
+
+                <div class="exit-wrap" onclick="onExitClick()">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+
+                </div>
+
+
+            </div>
+
+            <div class="info-wrap">
+
+                <div class="email-wrap">
+
+                    <input class="to-email" placeholder="Recipients">
+
+                </div>
+
+                <div class="subject-wrap email-wrap">
+
+                    <input class="subject" placeholder="Subject">
+
+                </div>
+
+                <textarea class="discription">
+                </textarea>
+
+                <div class="options-row">
+
+                    <div class="send-wrap">
+
+                        <div class="send-btn">Send
+                        </div>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down">
+                            <polyline points="6 9 12 15 18 9">
+
+                        </polyline>
+                        </svg>
+
+
+                    </div>
+
+                    <div class="features-wrap">
+
+                        <div class="features features1">
+                        </div>
+                        
+                        <div class="features features2">
+                        </div>
+                        
+                        <div class="features features3">
+                        </div>
+
+                        <div class="features features4">
+                        </div>
+                      
+                        <div class="features features5">
+                        </div>
+                       
+                        <div class="features features6">
+                        </div>
+                        
+                        <div class="features features7">
+                        </div>
+                        
+                        <div class="features features8">
+                        </div>
+
+                    </div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" color="#bfaeae" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical">
+                        <circle cx="12" cy="12" r="1"></circle>
+                        <circle cx="12" cy="5" r="1"></circle>
+                        <circle cx="12" cy="19" r="1"></circle>
+                    </svg>
+
+                    <div class="remove-bin">
+                    </div>
+            
+
+                </div>
+
+             
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<script src="./services/Data.Service.js">
+</script>
+
+<script src="./componets/header/header.js">
+</script>
+
+<script src="./componets/list/list.js">
+</script>
+
+<script src="./main.js">
+</script>
+
+</body>
+</html>
